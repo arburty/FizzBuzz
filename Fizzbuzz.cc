@@ -14,8 +14,6 @@ Fizzbuzz::Fizzbuzz() : _start(0), _stop(100), _fizz(3), _buzz(5) {
 }
 
 void Fizzbuzz::run() {
-    cout << "-- In run() --\n";
-
      //for when start and stop are arguments
     if (_start >= _stop) {
         cerr << "start must be greater than stop\n";
@@ -37,5 +35,4 @@ void Fizzbuzz::run() {
         }
         cout << count << "\n";
     }
-    cout << "--End of Run() --\n";
 }
