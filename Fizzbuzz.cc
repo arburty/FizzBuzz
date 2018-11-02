@@ -13,6 +13,9 @@ Fizzbuzz::Fizzbuzz() : _start(0), _stop(100), _fizz(3), _buzz(5) {
     run();
 }
 
+Fizzbuzz::Fizzbuzz(int start, int stop, int fizz, int buzz) : _start(start), _stop(stop), _fizz(fizz), _buzz(buzz) {
+    run();
+}
 void Fizzbuzz::run() {
      //for when start and stop are arguments
     if (_start >= _stop) {
@@ -20,7 +23,7 @@ void Fizzbuzz::run() {
         exit(0);
     }
 
-    int count = _start;
+    int count = _start-1;
     while (count++ < _stop) {
         if (count % _fizz == 0) {
             if (count % _buzz == 0) {

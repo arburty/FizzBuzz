@@ -8,6 +8,7 @@ using namespace std;
 class Fizzbuzz {
     public:
         Fizzbuzz();
+        Fizzbuzz(int start, int stop, int fizz, int buzz);
         void run();
     protected:
         int _start;

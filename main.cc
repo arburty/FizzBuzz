@@ -4,5 +4,6 @@
 using namespace std;
 
 int main() {
-    Fizzbuzz run;
+    //Fizzbuzz run;
+    Fizzbuzz(2, 60, 4, 6);
 }
